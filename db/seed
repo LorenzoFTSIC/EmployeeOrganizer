@@ -1,0 +1,19 @@
+INSERT INTO department (name)
+VALUES  ("Sales"),
+        ("Marketing"),
+        ("Operations"),
+        ("Management");
+
+INSERT INTO role (title, salary, department_id)
+VALUES  ("Sales Director", 150000, 1),
+        ("Head Marketing Agent", 150000, 2),
+        ("Project manager", 175000, 3),
+        ("P.R. Representative", 115000, 2),
+        ("Manager", 185000, 4);
+
+
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ("James", "Smith", 3, NULL),
+       ("Michael", "Garcia", 5, 2),
+       ("Maria", "Rodriguez", 7, NULL),
+       ("James", "Johnson", 8, 1 );
